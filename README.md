@@ -53,13 +53,6 @@ Some implementers choose to submit the usage data of the service instances using
 
 Incoming requests from IBM Cloud's Resource Controller towards your Broker can use can use either `basic` or `bearer` authentication, depend on how you configured your Broker registration with IBM Cloud and your application.
 
-#### Basic
-
-The OSB spec requires that the Broker [supports authentication with the HTTP basic method](https://github.com/openservicebrokerapi/servicebroker/blob/v2.12/spec.md#authentication).
-
-To configure this authentication method, head over to Partner Center Sell, find your broker and configure your broker according to these [instructions](https://cloud.ibm.com/docs/sell?topic=sell-broker-onboard) and pick `auth_scheme: basic`.
-
-To configure this application to accept a basic authentication credential use the environment variables:
 
 ```bash
 BROKER_BASIC_USERNAME=myUsername
